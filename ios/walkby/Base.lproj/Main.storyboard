@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="R6r-QD-6Sb">
             <objects>
-                <viewController id="De7-8y-f2Q" customClass="ViewController" customModule="walkby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="De7-8y-f2Q" customClass="ViewController" customModule="walkby" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r9p-lX-JAB"/>
                         <viewControllerLayoutGuide type="bottom" id="z5P-la-zH7"/>
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnl-3l-DEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="-261"/>
+            <point key="canvasLocation" x="349.5" y="-201"/>
         </scene>
         <!--Map View-->
         <scene sceneID="ufC-wZ-h7g">
@@ -51,12 +51,35 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-ae-0ru">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="edM-gr-67C">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="-7" width="400" height="607"/>
+                                </variation>
+                            </visualEffectView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TAa-ae-0ru"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TAa-ae-0ru"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="-261"/>
+            <point key="canvasLocation" x="1058" y="-201"/>
         </scene>
     </scenes>
 </document>
